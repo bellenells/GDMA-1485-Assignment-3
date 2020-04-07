@@ -9,46 +9,44 @@
 
 <body>
 	
+	<!--does every single image on this page have a null or "" attribute since they are all decorative?-->
+	
 	<header class="wrapper">
 		<div class="row">
 				<h1>Acadia</h1>
 					<nav>
 					<ul>
-						<!--do you want all of the anchors to just link to this same page?-->
-						<li><a href="#">blog</a></li>
-						<li><a href="#">shop</a></li>
-						<li><a href="#">portfolio</a></li>
-						<li><a href="#">about</a></li>
-						<li><a href="#">contacts</a></li>
+						<li><a href="#img-latest">blog</a></li>
+						<li><a href="#bg-grn">shop</a></li>
+						<li><a href="#portfolio">portfolio</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#contacts">contacts</a></li>
 					</ul>
 				</nav>
-			    <nav>
-					<!--still fuzzy on how to implement font awesome-->
+			  
 					<script src="https://kit.fontawesome.com/e08efd0e54.js" crossorigin="anonymous"></script>
-			    </nav>
+			    
 		</div>
 		<div class="row">
-			<div id="img-abt">
-		 <img src="img/about.jpeg" alt="null" width="100">
-			</div>
+		 	<img src="img/about.jpeg" alt="null" width="300">
+			<div class="right">
+				<h2>curating the best of the ordinary &amp; everyday</h2>
 			<div id="img-latest"><p>the latest</p></div>
 			<div id="img-insta"><p>insta with us</p></div>
+			</div>
 		</div>
 	</header>
 	
-	<section class="wrapper" id="bg-grn">
-		<form>
-			<fieldset class="row">
-              <legend>get on the list</legend>
-				<label for="email address"></label>
-				<input type="text" name="email address" placeholder="Maxlength 20 Characters" id="email address">
+		<form class="wrapper" id="bg-grn">
+			<div class="row">
+              <h2>get on the list</h2>
+				<label for="email address">email address</label>
+				<input type="email" name="email address" placeholder="Maxlength 20 Characters" id="email address">
 				<p><a href="#">Submit</a></p>
-			</fieldset>
+			</div>
 		</form>
-	</section>
-	
-	<!--really confused on how to categorize these floats. Did i use my classes correctly, and are they in correct order?-->
-	<div class="wrapper">
+
+	<div class="wrapper" id="portfolio">
 		<section class="row">
 			<header class="right">
               <h2>we're passionate about simplicity</h2>
@@ -57,43 +55,33 @@
 				<p>insert ipsum here</p>
 			</div>
 		</section>
-		<section class="row">
-		  <div class="left">
-			<img src="img/about.jpeg" alt="null" width="100">
-			<img src="img/about.jpeg" alt="null" width="100">
-		 </div>
-		 <div class="right">
-			<img src="img/about.jpeg" alt="null" width="100">
+		<div class="row">
+            <section class="left">
+              <img src="img/about.jpeg" alt="" width="100">
+              <h2>get the goods</h2>
+              <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section> 
+			<section class="right">
+            <img src="img/about.jpeg" alt="" width="100">
+              <h2>read the blog</h2>
+              <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section> 
+			<section class="right">
+            <img src="img/about.jpeg" alt="" width="100">
+              <h2>get in touch</h2>
+              <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section> 
 		</div>
-		<header class="left">
-			<h2>get the goods</h2>
-		</header>
-		<header class="left">
-			<h2>read the blog</h2>
-		</header>
-		<header class="right">
-			<h2>get in touch</h2>
-		</header>
-		<div class="left">
-			<p>insert ipsum here</p>
-		</div>
-		<div class="left">
-			<p>insert ipsum here</p>
-		</div>
-		<div class="left">
-			<p>insert ipsum here</p>
-		</div>			
-		</section>
 	
-		<section>
-			<img src="img/about.jpeg" alt="null" width="100">
+		<section class="about">
+			<img src="img/about.jpeg" alt="" width="500">
 			
 			<div class="row">
 				<div class="left">
-                  <img src="img/about.jpeg" alt="null" width="100">
-                  <img src="img/about.jpeg" alt="null" width="100">
-                  <img src="img/about.jpeg" alt="null" width="100">
-                  <img src="img/about.jpeg" alt="null" width="100">
+                  <img src="img/about.jpeg" alt="" width="75">
+                  <img src="img/about.jpeg" alt="" width="75">
+                  <img src="img/about.jpeg" alt="" width="75">
+                  <img src="img/about.jpeg" alt="" width="75">
 				</div>
 				<div class="right">
 					<h2>instagram with us</h2>
@@ -101,9 +89,11 @@
 			</div>
 		</section>
 	
+		<!--in the github comments I am unsure of what you mean by "link the insta information properly". is there somewhere in the section above that should be clickable and lead to the instagram page?-->
+		
 	</div>
 	
-	<footer class="wrapper">
+	<footer class="wrapper" id="contacts">
 		<p>acadia</p>
 		
 		<p>insert ipsum here</p>
