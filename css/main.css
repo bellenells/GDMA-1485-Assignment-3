@@ -25,40 +25,103 @@ nav:first-child li a {
 
 nav:first-child a {
 	text-align: right;
-	font-size: 13px;
 }
 
 nav:last-child a {
 	text-align: center;
-	font-size: 13px;
 }
 
 .row {
 	overflow: auto;
 }
 
-ul {
-	width: 300px;
+h1, h2, nav, #img-latest p, #img-insta p, a  {
+	text-transform: uppercase;
 }
 
-h1, #right li {
-	width: 50px;
+h1 {
+	border: 1px solid black;
+	padding: 0px;
 }
 
-
-nav, h1, #left {
+nav, .left, #img-latest, #img-insta {
 	float: left;
 }
 
-
-#right {
+.right {
 	float: right;
+	width: 300px;
 }
+
+
 
 ul {
 	list-style-type: none;
 }
 
-ul span {
+ul span, label {
 	display: none;
+}
+
+ a {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a, ul, i {
+	color: black;
+}
+
+#img-latest, #img-insta {
+	background-color: #cccccc;
+	background-repeat: no-repeat;
+    background-size: cover; 
+	width: 300px;
+}
+
+#img-latest {
+	background-image: url("../img/latest.jpg");
+	height: 250px;
+	background-position: -1px -150px;
+	
+}
+
+#img-insta {
+	background-image: url("../img/insta.jpg");
+	height: 200px;
+}
+
+#img-latest p, #img-insta p, form h2 {
+	color: white;
+}
+
+#bg-grn {
+	background-color: #4c665b;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+form h2 {
+	text-align: center;
+}
+
+form a {
+	padding: 10px;
+	letter-spacing: 2px;
+}
+
+header .right {
+	width: 100px;
+}
+
+#about img {
+	text-align: center;
+}
+
+#portfolio .right header, form a {
+	background-color: #eceeec;
+}
+
+#portfolio headert {
+	width: 100px;
 }
