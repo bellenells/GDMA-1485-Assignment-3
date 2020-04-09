@@ -1,3 +1,64 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {
+	-webkit-boxsizing: border-box;
+	-moz-boxsizing: border-box;
+	-o-boxsizing: border-box;
+	-ms-boxsizing: border-box;
+	boxsizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+ul li, nav li {
+	display: inline-block;
+}
+
+nav:first-child li a {
+	margin-left: 5px;
+}
+
+nav:first-child a {
+	text-align: right;
+	font-size: 13px;
+}
+
+nav:last-child a {
+	text-align: center;
+	font-size: 13px;
+}
+
+.row {
+	overflow: auto;
+}
+
+ul {
+	width: 300px;
+}
+
+h1, #right li {
+	width: 50px;
+}
+
+
+nav, h1, #left {
+	float: left;
+}
+
+
+#right {
+	float: right;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul span {
+	display: none;
+}
