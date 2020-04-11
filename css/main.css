@@ -34,14 +34,20 @@ nav:last-child a {
 #curating {
 	font-weight: bold;
 	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 25px;
 }
 
 .row {
 	overflow: auto;
 }
 
-h1, h2, nav, #img-latest p, #img-insta p, a, #curating  {
+h1, h2, nav, #img-latest p, #img-insta p, a, footer p:first-child  {
 	text-transform: uppercase;
+}
+
+footer {
+	text-align: center;
 }
 
 h1 {
@@ -50,8 +56,14 @@ h1 {
 	font-size: 12px;
 }
 
-nav, .row:nth-child(2) img, .action:first-child, #logo, .passionate:first-child, .left {
+nav, .action:first-child, #logo, .passionate:first-child, #left img:first-child, #left img:nth-child(2), #left img:nth-child(3), #left img:last-child, #curating, header .row:nth-child(2) img, .action:nth-child(2) {
 	float: left;
+}
+
+
+
+header .row:nth-child(2) img {
+	width: 300px;
 }
 
 .left {
@@ -62,9 +74,21 @@ nav, .row:nth-child(2) img, .action:first-child, #logo, .passionate:first-child,
 	margin-top: 100px;
 }
 
-#img-latest, #img-insta, #curating, .action:nth-child(2), .action:last-child, header .social, .passionate:last-child, .right  {
+#img-latest, #img-insta, .action:last-child, header .social, .passionate:last-child, .right, #about header {
 	float: right;
+}
+
+#about header {
+	margin-right: 350px;
+}
+
+ 
+#img-latest, #img-insta .action:nth-child(2), .action:last-child, header .social, .passionate:last-child, .right {
 	width: 100px;
+}
+
+#curating {
+	width: 700px;
 }
 
 .passionate {
@@ -88,15 +112,12 @@ nav, .row:nth-child(2) img, .action:first-child, #logo, .passionate:first-child,
 }
 
 .action:nth-child(2) {
-	padding-right: 100px;
+	padding-left: 100px;
 }
+
 
 #img-latest {
-	margin-right: 00px;
-}
-
-#img-insta {
-	margin-right: 100px;
+	margin-right: 75px;
 }
 
 .row:nth-child(2) {
@@ -104,7 +125,25 @@ nav, .row:nth-child(2) img, .action:first-child, #logo, .passionate:first-child,
 }
 
 #curating {
-	margin-right: 600px;
+	margin-left: 50px;
+}
+
+#curating-p {
+	width: 200px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.passionate div:first-child {
+	border: 1px solid #000;
+}
+
+#curating span, #portfolio span {
+	background-color: black;
+	display: inline-block;
+	width: 50px;
+	height: 3px;
+	margin: 0 10px 1px;
 }
 
 .action:last-child {
@@ -117,9 +156,16 @@ nav, .row:nth-child(2) img, .action:first-child, #logo, .passionate:first-child,
 	padding: 10px;
 }
 
+.action header {
+	margin: -100px 75px 10px;
+}
+
 form {
 	text-align: center;
-	display: inline-block;
+}
+
+#about img:first-of-type {
+	margin: 0 auto;
 }
 
 #left {
@@ -177,16 +223,25 @@ a:hover, ul:hover, i:hover {
 
 #bg-grn {
 	background-color: #4c665b;
-	padding: 20px;
-	margin-top: 50px;
+	padding: 50px;
+	margin: 50px;
 }
 
 form h2 {
 	text-align: center;
 }
 
+form input, form p {
+	display: inline-block;
+}
+
+input {
+	padding: 6px;
+	padding: 6px;
+}
+
 form a {
-	padding: 10px;
+	padding: 9px;
 	letter-spacing: 2px;
 }
 
@@ -198,7 +253,7 @@ header .right {
 	text-align: center;
 }
 
-#portfolio .right header, form a {
+ form a {
 	background-color: #eceeec;
 }
 
