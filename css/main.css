@@ -50,7 +50,7 @@ footer {
 	text-align: center;
 }
 
-h1 {
+h1, footer p:first-child {
 	border: 1px solid black;
 	padding: 10px;
 	font-size: 12px;
@@ -115,14 +115,16 @@ header .row:nth-child(2) img {
 	padding-left: 100px;
 }
 
+.action:first-child {
+	padding-left: 100px;
+}
+
 
 #img-latest {
 	margin-right: 75px;
 }
 
-.row:nth-child(2) {
-	margin-left: 100px;
-}
+
 
 #curating {
 	margin-left: 50px;
@@ -138,6 +140,10 @@ header .row:nth-child(2) img {
 	border: 1px solid #000;
 }
 
+#about {
+	text-align: center;
+}
+
 #curating span, #portfolio span {
 	background-color: black;
 	display: inline-block;
@@ -147,13 +153,12 @@ header .row:nth-child(2) img {
 }
 
 .action:last-child {
-	padding-right: 150px;
+	padding-right: 100px;
 }
 
 .action h2 {
 	text-align: center;
 	background-color: #eceeec;
-	padding: 10px;
 }
 
 .action header {
@@ -209,13 +214,24 @@ a:hover, ul:hover, i:hover {
 	background-image: url("../img/latest.jpg");
 	height: 250px;
 	background-position: -1px -150px;
+	margin: 50px 0;
 	
+}
+
+.about {
+	margin: 0 auto;
+}
+
+#img-latest p, #img-insta p {
+	padding-top: 150px;
 }
 
 #img-insta {
 	background-image: url("../img/insta.jpg");
 	height: 200px;
+	margin: 50px 100px 0 0;
 }
+
 
 #img-latest p, #img-insta p, form h2 {
 	color: white;
@@ -259,4 +275,38 @@ header .right {
 
 #portfolio header {
 	width: 100px;
+}
+
+#bg-grn {
+	margin-top: 100px;
+}
+
+.action {
+	margin-bottom: 100px;
+}
+
+#about header {
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+	line-height: 30px;
+}
+
+#about h2 {
+	font-size: 25px;
+	text-align: left;
+}
+
+.action p, .passionate p {
+	line-height: 30px;
+}
+
+#about {
+	margin-bottom: 100px;
+	border-bottom: 3px solid black;
+	padding-bottom: 50px;
+}
+
+#left img:first-child {
+	margin-right: 10px;
+	height: 100px;
 }
