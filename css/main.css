@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* CSS Document */
 
 
 /*--------------------------------------------------------------
@@ -63,17 +65,13 @@ form a {
 }
 
 
-form input, form p {
+form input, form p, ul li, nav li, #curating span, #portfolio span, .passionate span {
 	display: inline-block;
 }
 
 
  form a {
 	background-color: #eceeec;
-}
-
-form, form h2 {
-	text-align: center;
 }
 
 
@@ -87,10 +85,6 @@ ul span, label {
 	display: none;
 }
 
-ul li, nav li {
-	display: inline-block;
-}
-
 nav:first-child li a {
 	margin-left: 5px;
 }
@@ -99,28 +93,40 @@ nav:first-child a {
 	text-align: right;
 }
 
-nav:last-child a {
-	text-align: center;
+
+/* -- MEDIA -- */
+
+wrapper row:first-child img {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: hero-img;
+  animation-duration: 4s;
 }
+
+@keyframes hero-img {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
 
 
 /* -- TYPOGRAPHY -- */ 
 
 
-#about {
+a:hover, ul:hover, i:hover, #img-insta p:hover, #img-latest p:hover {
+	color: gray;
+}
+
+form, nav:last-child a, #about, footer {
 	text-align: center;
 }
 
 
-
-h1, h2, nav, #img-latest p, #img-insta p, a, footer p:first-child  {
+h1, h2, nav, #img-latest p, #img-insta p, a, footer p:first-child, #curating  {
 	text-transform: uppercase;
 }
 
-
-footer {
-	text-align: center;
-}
 
  a {
 	text-decoration: none;
@@ -164,7 +170,6 @@ a, ul, i {
 #curating {
 	font-weight: bold;
 	font-size: 20px;
-	text-transform: uppercase;
 	line-height: 25px;
 }
 
@@ -186,12 +191,13 @@ a, ul, i {
 h1, footer p:first-child {
 	border: 1px solid black;
 	padding: 10px;
-	font-size: 12px;
-	width: 50px;
+	font-size: 12px;	
 	margin: 0 auto;
 }
 
-
+footer p:first-child {
+	width: 50px;
+}
 
 
 
@@ -275,9 +281,6 @@ header .row:nth-child(2) img {
 	margin-top: 100px;
 }
 
-
-
-
  
 #img-latest, #img-insta .action:nth-child(2), .action:last-child, header .social, .passionate:last-child, .right {
 	width: 100px;
@@ -290,9 +293,6 @@ header .row:nth-child(2) img {
 .passionate {
 	padding: 50px;
 }
-
-
-
 
 .passionate:first-child {
 	width: 1000px;
@@ -326,7 +326,6 @@ header .row:nth-child(2) img {
 
 #curating span, #portfolio span, .passionate span {
 	background-color: black;
-	display: inline-block;
 	width: 50px;
 	height: 3px;
 	margin: 0 1px;
@@ -353,12 +352,6 @@ header .row:nth-child(2) img {
 }
 
 
-
-
-a:hover, ul:hover, i:hover {
-	color: gray;
-}
-
 #img-latest, #img-insta {
 	background-color: #cccccc;
 	background-repeat: no-repeat;
@@ -367,12 +360,12 @@ a:hover, ul:hover, i:hover {
 }
 
 #img-latest {
-	background-image: url("../img/latest.jpg");
+	background-image: url("../img/fern.jpg");
 	height: 250px;
 	background-position: -1px -150px;
-	margin: 50px 0;
-	
+	margin: 50px 0;	
 }
+
 
 .about {
 	margin: 0 auto;
@@ -383,7 +376,7 @@ a:hover, ul:hover, i:hover {
 }
 
 #img-insta {
-	background-image: url("../img/insta.jpg");
+	background-image: url("../img/monstera.jpg");
 	height: 200px;
 	margin: 50px 100px 0 0;
 }
@@ -398,9 +391,6 @@ input {
 	padding: 6px;
 }
 
-
-
-
 #bg-grn {
 	margin-top: 100px;
 }
@@ -408,8 +398,6 @@ input {
 .action, #about {
 	margin-bottom: 100px;
 }
-
-
 
 #about {
 	border-bottom: 3px solid black;
